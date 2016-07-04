@@ -1,0 +1,68 @@
+body{
+	width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+	font:16px "Open Sans";
+	line-height: 1.5;
+	color:#464646;
+	text-align: center;
+}
+.person-img{
+	width:50%;
+	height:auto;
+	float:left;
+}
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.person-wrap{
+	width:100%;
+	float:left;
+}
+.person-wrap:hover{
+	background:#FFF1E2;
+}
+.layout-half{
+	width:50%;
+}
+.float-right{
+	float:right;
+}
+
+
+
+.person{
+	padding-top:3.44rem;
+	overflow: hidden;
+}
+
+.person-name{
+	margin-bottom: 1.13rem;
+	font:19px "Montserrat";
+	line-height: 1.1;
+}
+.person-desc{
+	bottom: 0.81rem;
+}
+.person-desc::after{
+	display: block;
+	content:'';
+	width:40px;
+	height: 1px;
+	background: #464646;
+	margin:0.81rem auto;
+}
+
+.person a{
+	text-indent:-9999em;
+}
+
+.twitter{
+	width:30px;
+	height: auto;
+}
+.twitter:hover{
+	fill:#49A3D3;
+}
