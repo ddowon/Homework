@@ -1,0 +1,85 @@
+body{
+	width:100vw;
+	height: 100vh;
+	background: url("../img/pexels-photo.jpg") no-repeat center center;
+	background-size:cover;
+	color:white;
+	font-weight: 700;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+[class$="-box"]{
+	width:200px;
+	height: 100px;
+	line-height: 100px;
+	position:absolute;
+	font-size:1.3rem;
+}
+.link-box{
+	top:0;
+	left:0;
+}
+.weather-box{
+	top:0;
+	right:0;
+}
+.info-box{
+	bottom: 0;
+	left: 0;
+}
+.todo-box{
+	bottom: 0;
+	right: 0;
+}
+.todo-box button{
+	background: transparent;
+	border:none;
+	line-height: 70px;
+	color:white;
+	font-weight: 700;
+	font-size:1.3rem;
+}
+
+.time-box{
+	width:40%;
+	height: 30%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size: 3rem;
+	line-height: 1.5rem;
+}
+.time{
+	padding-bottom: 6rem;
+	font-size:9rem;
+}
+
+.input-box{
+	width:40%;
+	height:5%;
+	bottom:30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1.6rem;
+	line-height: 1.5rem
+}
+.input-box input{
+	width:90%;
+	height: 90%;
+	background: transparent;
+	border:0px;
+	border-bottom:2px solid white;
+	color:white;
+	font-size:1.5rem;
+}
+.quote-box{
+	width:40%;
+	height: 10%;
+	bottom:0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 400;
+	line-height: 1.5rem;
+}
