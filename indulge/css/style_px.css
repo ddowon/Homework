@@ -6,14 +6,25 @@
 
 /* grid */
 .grid[class*="unit-"]{
-	height: auto;
+	float: left;
 }
-[class*="unit-"]{
-	float:left;
-	height: 250px;
+.grid [class*="unit-"]{
+	float: left;
+	/*padding-bottom: 50%;*/
 }
-[class*="unit-"].height2{
-	height: 500px;
+
+.ratio-40 [class*="unit-"]{
+	padding-bottom: 53.17796610169492%;
+}
+.ratio-30 [class*="unit-"]{
+	padding-bottom: 70.90395480225989%;
+}
+.ratio-30x2 [class*="unit-"]{
+	padding-bottom: 141.9718309859155%;
+}
+
+.ratio-100 [class*="unit-"]{
+	padding-bottom:20%;
 }
 
 .col-1-12{width:80px;}
@@ -88,7 +99,8 @@ html{font:14px/1.5;}
 
 .wrap{
 	position:relative;
-	width:1180px;
+	width:100%;
+	max-width: 1180px;
 	margin-left: auto;
 	margin-right:auto;
 }
