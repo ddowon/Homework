@@ -1,0 +1,190 @@
+
+/* layout */
+[class*="layout-column"] {
+	float: left;
+}
+[class*="layout-column-1"] {
+	border-right: 1px solid lightgray;
+}
+.layout-column-2-3 { width: 66.66666%; }
+.layout-column-1-3 { width: 33.33333%; }
+.layout-column-1-2 { width: 50%; }
+
+
+
+/*  section common  */
+
+.main-wrap img, .brand-img {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	vertical-align: top;
+	transition: transform 0.4s;
+}
+
+.main-wrap a {
+	color: black;
+	display: block;
+	padding: 50px 30px 20px;
+}
+
+.news-box h2, .stock-box, .notice-box{
+	margin: 0 30px;
+}
+
+.main-wrap p {
+	margin-top: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.5;
+	color: gray;
+}
+
+.taxi-box:hover img,
+.with-box:hover img,
+.brunch-box:hover img,
+.kakaostory-box:hover .kakaostory-banner-bg-img { transform: scale(1.1); }
+
+.main-wrap h2 {
+	margin-top: 60px;
+	height: 28px;
+	text-indent: -9999px;
+	background-image: url('../img/txt_corp.png');
+	background-repeat: no-repeat;
+}
+.main-wrap h3 {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.img-wrap {
+	/*margin-top: 30px;*/
+	overflow: hidden;
+}
+
+.service-box:hover,
+.taxi-box:hover,
+.brunch-box:hover,
+.with-box:hover,
+.career-box:hover { background-color: #F2F2F2; }
+
+.news-box h2 {background-position: 0 -140px;}
+.stock-box h2 {background-position: 0 -170px;}
+.service-box h2 {background-position: -380px -98px;}
+.taxi-box h2,
+.brunch-box h2, 
+.with-box h2 {background-position: 0 -260px;}
+.people-box h2 {background-position: 0 -320px;}
+.career-box h2 {background-position: 0 -290px;}
+.notice-box h2 {background-position: 0 -200px;}
+.kakaostory-box h2 {background-image: none;}
+
+
+
+/* main */
+main {
+	position: relative;
+	left: 319px;
+	width:70%;
+	max-width: 1300px;
+}
+
+.brand-img {
+	padding-bottom: 50%;
+	background-image: url("../img/temp_mov.jpeg");
+	border-right: 1px solid lightgray;
+}
+
+
+.news-box img,
+.taxi-box img,
+.brunch-box img,
+.career-box img,
+.with-box img {position: relative; top: 0;}
+
+/* news-box */
+.news-box article {
+	margin-top: 30px;
+}
+.news-box a {
+	padding: 0 30px;
+}
+.news-box h3 {
+	font-size: 19px;
+	font-weight: bold;
+}
+.news-box p {
+	height: 57px;
+}
+/*   왜 nth-child가 3번째 일까....? */
+.news-box p:nth-child(3) {
+	margin-top: 10px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 11px;
+}
+
+
+
+/* stock-box */
+.stock-box {
+	margin-bottom: 40px;
+}
+.current-stock {
+	font-size: 50px;
+	color: #eee;
+}
+p.change-gap {
+	font-size: 30px;
+	color: #3393EC;
+	font-weight: bold;
+	float: left;
+}
+.stock-box .change-date {
+	float: right;
+	margin-top: 35px;
+}
+
+/* service-box */
+/* taxi-box */
+/* brunch-box */
+/* with-box */
+
+/* people-box */
+
+/* career-box */
+
+/* kakaostory-box */
+.main-wrap .kakaostory-box {
+	vertical-align: top;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.kakaostory-box .img-wrap {
+	margin-top: 0;
+}
+.kakaostory-text-img { 
+	height: 100%;
+	position: absolute;
+	top: 10px;
+}
+
+
+/* notice-box */
+
+.notice-content {
+	margin: 20px 15px;
+	list-style: disc;
+}
+.notice-content li {
+	padding: 5px 0;
+}
+.notice-content li button{
+	border: none;
+	background: transparent;
+	vertical-align: top;
+}
+.notice-content li span {
+	float: right;
+}
