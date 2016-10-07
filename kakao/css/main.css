@@ -28,8 +28,9 @@
 	padding: 50px 30px 20px;
 }
 
-.news-box h2, .stock-box, .notice-box{
-	margin: 0 30px;
+.news-box h2, .stock-box, .notice-box {
+	margin-right: 60px;
+	margin-left: 30px;
 }
 
 .main-wrap p {
@@ -82,11 +83,13 @@
 
 
 /* main */
-main {
+.main-wrap {
 	position: relative;
 	left: 319px;
-	width:70%;
+	/*width:70%;*/
+	width: calc(90% - 319px);
 	max-width: 1300px;
+	min-width: 900px;
 }
 
 .brand-img {
@@ -146,28 +149,85 @@ p.change-gap {
 }
 
 /* service-box */
+
 /* taxi-box */
+
 /* brunch-box */
+
 /* with-box */
 
 /* people-box */
+.people-box {
+	position: relative;
+	margin: 30px;
+}
+.people-box h2 {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	margin-top: 0px;
+	width: 100%;
+	z-index: 100;
+}
 
+.carousel-content-desc p {
+	margin: 0;
+	color: black;
+	background-color: #E5E5E5;
+	text-align: center;
+}
+
+.carousel-content-desc p:first-child {
+	padding: 50px 60px 0;
+}
+.carousel-content-desc p:nth-child(2) {
+	padding: 30px 0 30px;
+	color: gray;
+}
+.people-box [class*="btn"] {
+	position: absolute;
+	background: black;
+}
+.people-box .btn-prev {
+	top: 30%;
+	/*transform: translateY(-50%);*/
+}
+.people-box .btn-next {
+	top: 30%;
+	right: 0;
+	/*transform: translateY(-50%);*/
+}
+.carousel-pasing-nums {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.carousel-pasing-nums li {
+	float: left;
+}
+.carousel-pasing-nums button {
+	width: 15px;
+	background: #fff;
+	margin: 0 5px ;
+}
 /* career-box */
 
 /* kakaostory-box */
 .main-wrap .kakaostory-box {
-	vertical-align: top;
 	position: relative;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	vertical-align: top;
 }
 .kakaostory-box .img-wrap {
 	margin-top: 0;
 }
 .kakaostory-text-img { 
-	height: 100%;
 	position: absolute;
 	top: 10px;
+	left: 0px;
+	height: 100%;
 }
 
 

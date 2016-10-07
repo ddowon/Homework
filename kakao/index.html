@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko-KR" data-ng-app="kakaoApp">
 <head>
 	<meta charset="UTF-8">
 	<title>KaKao page</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+	<link rel="stylesheet" href="css/mediaquery.css">
+	<script src="https://use.fontawesome.com/59f2fc75bc.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script> -->
+	<script src="../resource/jquery-3.1.0.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
 </head>
-<body data-ng-app="kakaoApp">
+<body>
 	<div class="side-menu">
 		<div class="side-header">
 			<h1><a class="brand-logo" href="#">kakao</a></h1>
@@ -80,12 +84,12 @@
 		</div><!-- side-footer -->
 	</div><!-- side-menu -->
 	<div class="tablet">
-		<button class="toggle-menu-btn" type="button">click</button>
+		<button class="toggle-menu-btn fa fa-bars fa-3x" type="button" aria-hidden="true"></button>
 	</div>
 
 	<!-- main -->
-	<main>
-		<div class="main-wrap clearfix">
+	<main data-ng-controller="pagesCtrl">
+			<div class="main-wrap clearfix">
 			
 			<!-- main 영역 큰 layout 2/3  -->
 			<div class="layout-column-2-3">
@@ -153,19 +157,21 @@
 						</a>
 					</section>
 					<section class="people-box">
-						<h2 class="readable-hidden">people</h2>
+						<h2>people</h2>
 						<div>
-							<div>
+							<div class="carousel-content">
 								<div class="img-wrap">
 									<img src="img/pc_David.png" alt>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus</p>
-								<p>David</p>
+								<div class="carousel-content-desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quo provident veniam</p>
+									<p>David</p>
+								</div>
 							</div>
 						</div>
-						<button type="button" class="prev-btn"></button>
-						<button type="button" class="next-btn"></button>
-						<ul>
+						<button type="button" class="btn-prev"></button>
+						<button type="button" class="btn-next"></button>
+						<ul class="carousel-pasing-nums clearfix">
 							<li><button type="button"></button></li>
 							<li><button type="button"></button></li>
 							<li><button type="button"></button></li>
@@ -216,6 +222,7 @@
 		</div>
 	</main>
 	<script src="js/js.js"></script>
+	<!-- <script src="angularjs/main.js"></script> -->
 	<script src="js/sidemenu/toggleBtn.js"></script>
 	<script src="js/sidemenu/gnb.js"></script>
 	<script src="js/sidemenu/sitelink.btn.js"></script>

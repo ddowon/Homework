@@ -17,7 +17,9 @@ a {
 ul {
 	list-style: none;
 }
-
+img {
+	border: none;
+}
 .clearfix::after {
 	content: '';
 	display: block;
@@ -172,7 +174,11 @@ ul {
 	padding: 10px;
 }
 
-@media (max-width:1097px){
-	.side-menu {left: -319px;}
-	.tablet {display: block;}
-}
+/* side-menu toggle-btn */
+	.toggle-menu-btn {
+		margin: 15px;
+		cursor: pointer;
+		background: transparent;
+		border: none;
+	}
+
