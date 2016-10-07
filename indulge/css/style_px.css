@@ -20,7 +20,7 @@
 	padding-bottom: 70.90395480225989%;
 }
 .ratio-30x2 [class*="unit-"]{
-	padding-bottom: 141.9718309859155%;
+	padding-bottom: 142.4%;
 }
 
 .ratio-100 [class*="unit-"]{
@@ -234,6 +234,10 @@ body{
 	border:1px solid black;
 }
 
+
+.text-content{
+	background-color: #7f6162;
+}
 /* footer */
 
 footer{
