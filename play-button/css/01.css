@@ -37,7 +37,7 @@ button:focus{
 	border:3px solid gray;
 	border-right:0px;
 	border-top-left-radius: 2rem;
-	border-bottom-left-radius:2rem;
+	border-bottom-left-radius:2rem;	
 }
 .button-pause{
 	border-left: 0px;
