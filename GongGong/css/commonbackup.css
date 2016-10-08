@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, main {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/*   ============================================reset css=========================================================*/
+
+
+
+
+/*============= all style start====================*/
+
+body {
+    font-family:'Malgun Gothic';
+    letter-spacing: -2px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/*============= all style end ==================*/
+
+
+/*============== header start ===================*/
+.header-banner{    
+    background: #3B3B3B;
+    width:100%;
+}
+.header-banner-carousel{
+    position:relative;
+    width:750px;
+    margin:0 auto;
+}
+
+.header-banner img{
+    width:auto;
+    height: auto;
+    margin:20px 0;
+    float:left;
+    display: block;
+}
+.header-banner-btn-prev{
+    position:absolute;
+    top:30px;
+    left:-100px;
+}
+.header-banner-btn-next{
+    position:absolute;
+    top:30px;
+    left:800px;
+}
+
+.header-close{
+    background:#E4E4E4;
+    border-bottom:1px solid #DBDBDB;
+}
+.header-close div{
+    width:750px;
+    margin:0 auto;
+    text-align: right;
+    font-size:14px;
+    clear:both;
+}
+
+.header-close li{
+    float:left;
+}
+.header-close a{
+    display:block;
+    padding: 15px;
+}
+.header-close input{
+    padding:15px;
+    border:none;
+    background:gray;
+    cursor: pointer;
+}
+.header-search{
+    width:750px;
+    height: 50px;
+    margin:40px auto;    
+}
+
+.header-search-logo{
+   float:left;
+    margin-right: 20px;
+    
+}
+.searchBox{
+   float:left;
+    width:500px;
+    height: 35px;
+    border:2px solid black;
+}
+
+.header-search input[type=submit]{
+   float:left;
+    padding:5px;
+    border:2px solid black;
+    background:black;
+    color:white;
+    font-size:20px;    
+}
+.header-nav{
+   width:1050px;
+    height: 40px;
+    margin:  auto;
+}
+.header-nav li{
+    float:left;
+    display:block;
+    padding:15px 0px;
+    width:210px;
+    font-size:20px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.header-nav a:hover{
+    color:palevioletred;
+}
+.header-nav-main{
+    display: block;
+    font-weight: bold;
+    
+}
+
+.nav-dropdown-content{
+    display:none;
+    position:absolute;
+    margin-top:15px;
+    padding:20px 0px;
+    width:210px;
+    height: 180px;    
+    line-height: 30px;
+    font-size:16px;
+    background-color: white;
+    border:1px solid lightgray;
+    z-index: 10;
+}
+
+.nav-dropdown-content a{
+    display:block;
+}
+.header-nav:hover .nav-dropdown-content{
+    display: block;
+}
+/*============== header end ==================*/
+
+/*=============== footer start ==================*/
+
+.footer-header{  
+    border-bottom:1px solid gray;
+    text-align: center;    
+}
+.footer-header-wrap{
+    width:1000px;
+    margin: auto;
+}
+.footer-header ul{
+    margin:auto;
+    float:left;
+}
+.footer-header li{
+    float:left;
+    margin:20px 0; 
+    padding: 0 20px;
+    font-size:13px;
+    color:gray;
+    border-right: 1px solid gray;
+}
+
+.footer-selectsite{
+    float:left;
+    height: 0px;
+}
+.footer-selectsite select{
+    margin:10px 10px;
+    height: 30px;    
+}
+
+.footer-bottom{
+    width:1000px;
+    margin:auto;
+    
+}
+.footer-bottom li{
+    float:left;
+    margin:20px 15px;
+}
+.footer-bottom div{
+    width:300px;
+    line-height: 20px;
+    font-size:12px;
+    color:gray;
+}
+/*=============== footer end ==================*/
+
+
+
+/*==============  media query ================*/
+
+  
+    /* 가로크기가 680이하가 되면 적용*/    
+    @media screen and (max-width:639px) {
+        body{
+            max-width: 639px;
+        }
+        .header-banner{
+            display: none;
+        }
+        
+        .header-search img{
+            margin:auto;
+        }
+    }
+

@@ -1,0 +1,160 @@
+
+
+/*=============== main start ===============*/
+
+
+/*==============section1 start===================*/
+
+.section-1{
+    background-image:url(/img/bg_music.jpg);
+    background-color:gray;
+    width: 100%;
+    height: 380px;    
+}
+.section-1-wrap{
+    position:relative;
+    width:1200px;
+    margin: 0 auto;
+}
+.section-1-wrap-div1{
+    margin:0;
+    width:150px;    
+}
+.section-1-wrap-div1 img{
+    margin:-1.5px;
+}
+.section-1-centerlink{
+    position:absolute;
+    top:155px;
+    left:200px;
+}
+.section-1-sidemenu{
+    position:absolute;
+    top:20px;
+    right: 25px;
+}
+.section-1-sidemenu li{
+    margin-top:20px;
+}
+
+.section-1-banner{
+    background: url('/img/slide_bg.png');
+    width:236px;
+    height: 570px;
+    display: block;
+    position:absolute;
+    top:30px;
+    left:850px;
+    color:white;
+}
+.section-1-banner h4{
+    width:200px;
+    margin:30px 15px;
+    font-weight: bold;
+    
+}
+.section-1-banner p{
+    width:200px;
+    margin:0 0 10px 15px;
+    font-size:12px;
+    line-height: 16px;
+}
+.section-1-banner input{
+    display: block;
+    margin: 20px auto;
+    padding:5px 60px;
+    color:white;
+    font-size:12px;
+    border:1px solid white;
+    text-align: center;
+    background-color: transparent;
+}
+.section-1-banner img{
+    display: block;
+    margin:10px auto;
+}
+
+/*==============section1 end===================*/
+
+/*==============section2 start===================*/
+
+.section-2{
+    width:1250px;
+    margin: 0 auto;
+}
+.section-2-box{
+    float:left;
+    margin: 20px 10px 30px 80px;
+    line-height: 25px;
+    letter-spacing: -2px;
+    font-size:15px;
+}
+.section-2-box h3{
+    margin:10px 0;
+    font-size:20px;
+    font-weight: bold;    
+}
+/*==============section2 end===================*/
+
+/*==============section3 start===================*/
+.section-3{
+    background: #F1F1F1;
+    height: 110px;
+    border-top:1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+.section-3-wrap{
+    width:1250px;
+    margin: 0 auto;
+}
+.section-3-div{
+    width:250px;
+    margin:13px 31px;
+    padding:10px 0;
+    float:left;
+}
+.section-3 img{
+    display:block;
+    float:left;
+    margin:5px 10px;
+}
+.section-3-div h3{
+    display: block;
+    font-weight: bold;
+    margin:5px;
+}
+.section-3-div p{
+     width:240px;
+    line-height: 20px;
+    font-size:12px;
+    color:gray;
+    
+}
+/*==============section3 end ===================*/
+
+
+
+
+/*=============== main end ===================*/
+
+/* 가로크기가 680이하가 되면 적용*/    
+    @media screen and (max-width:639px) {
+        .section-1{
+            background-image: url(/img/bg_music.jpg);
+            width:100%;
+
+        }
+}
+
+/*==============  media query ================*/
+
+   
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="/js/js.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.js"></script> 
+</head>
+<body  onload="showSlides(1)">
+    <header>
+        <div class="header-banner">
+            <div id="header-banner" class="header-banner-carousel">
+
+                <ul class="clearfix">
+                    <li class="imgSlide">
+                        <a href="#"> 
+                            <img src="img/header-banner1.png" alt="공공누리포털이란? 자세히보기"> 
+                        </a>
+                    </li>
+                   <!--  <li class="imgSlide">
+                    <a href="#"> 
+                        <img src="img/header-banner2.png" alt="공공누리포털이란? 자세히보기"> 
+                    </a>
+                    </li>
+                    <li class="imgSlide">
+                        <a href="#"> 
+                            <img src="img/header-banner3.png" alt="공공누리포털이란? 자세히보기"> 
+                        </a>
+                    </li> -->
+                </ul>
+
+                <a class="header-banner-btn-prev" onclick="plusSlides(-1)" >
+                    <img src="img/btn_prev_banner.png"   alt="이전 배너 보기">
+                </a>
+                <a class="header-banner-btn-next" onclick="plusSlides(1)" >
+                    <img src="img/btn_next_banner.png" alt="다음 배너 보기">
+                </a>
+                
+            </div>
+            
+            
+<!--      ==============================================      -->
+<!--
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("imgSlide");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length} ;
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
+
+-->
+
+
+<!--   =============================        -->
+            
+            
+            <div class="header-close">
+                <div class="clearfix">
+                    <ul>
+                       <li><a href="#">공공기관 이용자</a></li>
+                       <li><a href="#">전체메뉴</a></li>                      
+                    </ul>
+                    <input type="button" id="header-toggle-btn" value="닫기">
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-search">
+            <div class="header-search-logo">
+               <span class="nav-menu-icon" onclick="sidenavOpen()">&#9776;</span>
+                <a href="#"> 
+                    <img src="img/logo.png" alt="공공누리로고">
+                </a>
+            </div>
+            
+            <div class="header-search-input">
+                <input type="text" class="searchBox">            
+                <input type="submit" value="검색">            
+            </div>
+        </div>
+        
+        <nav class="clearfix">
+            <ul class="header-nav">
+                <li>
+                    <a href="#" class="header-nav-main">공공저작물</a>
+                    <ul class="nav-dropdown-content">
+                        <li><a href="#">저작물 통합검색</a></li>  
+                        <li><a href="#">음악 저작물</a></li>
+                        <li><a href="#">사진 저작물</a></li>
+                        <li><a href="#">어물 저작물</a></li>
+                        <li><a href="#">영상 저작물</a></li>
+                        <li><a href="#">미술 저작물</a></li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="#"  class="header-nav-main">공공저작물 활용</a>
+                    <ul class="nav-dropdown-content">
+                        <li><a href="#">우수활용 사례</a></li>
+                        <li><a href="#">활용사례등록</a></li>
+                        <li><a href="#">컨설팅신청</a></li>
+                        <li><a href="#">추천콘텐츠</a></li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="#" class="header-nav-main">공공저작물 교육</a>
+                    <ul class="nav-dropdown-content">
+                        <li><a href="#">강의실</a></li>
+                        <li><a href="#">교육자료</a></li>
+                        <li><a href="#">질문과 답변</a></li>
+                        <li><a href="#">교육일정 및 신청</a></li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="#" class="header-nav-main">공공저작물 상담</a>
+                    <ul class="nav-dropdown-content">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">공공기관 Q&amp;A</a></li>
+                        <li><a href="#">일반이용자 Q&amp;A</a></li>
+                    </ul>
+                </li>    
+                <li>
+                    <a href="#" class="header-nav-main">소식 / 자료실</a>             
+                    <ul class="nav-dropdown-content">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공공누리 자료실</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main-class">
+       
+        <section  class="section-1">
+            <div class="section-1-wrap">
+               <div class="section-1-wrap-div1">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/btn_photo.png" alt="음악저작물 메뉴버튼">
+                            </a>
+                            <div class="section-1-centerlink">
+                                <a href="#"><img src="img/icon_music.png" alt="음악저작물 바로가기 버튼"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/btn_photo.png" alt="사진저작물 메뉴버튼">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/btn_language.png" alt="어물저작물 메뉴버튼">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/btn_video.png" alt="영상저작물 메뉴버튼">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/btn_art.png" alt="미술저작물 메뉴버튼">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+<!--                <img src="img/bg_music.jpg" alt="음악저작물">  css에서 백그라운드 이미지로 넣어야할듯? -->
+                
+                
+<!--
+                <img src="img/bg_music.jpg" alt="사진저작물">
+                <img src="img/icon_music.png" alt="사진저작물 바로가기 버튼">
+                
+                <img src="img/bg_music.jpg" alt="어문저작물">
+                <img src="img/icon_music.png" alt="어문저작물 바로가기 버튼">
+                
+                <img src="img/bg_music.jpg" alt="영상저작물">
+                <img src="img/icon_music.png" alt="영상저작물 바로가기 버튼">
+                
+                <img src="img/bg_music.jpg" alt="미술저작물">
+                <img src="img/icon_music.png" alt="미술저작물 바로가기 버튼">
+-->
+                <ul class="section-1-sidemenu">
+                    <li><a href="#"><img src="img/icon_quickmenu1.png" alt="저작권 통합검색 바로가기 버튼"></a></li>
+                    <li><a href="#"><img src="img/icon_quickmenu2.png" alt="이용안내 바로가기 버튼"></a></li>
+                    <li><a href="#"><img src="img/icon_quickmenu3.png" alt="유형안내 바로가기 버튼"></a></li>
+                    <li><a href="#"><img src="img/icon_quickmenu4.png" alt="자료실 바로가기 버튼"></a></li>
+                </ul>
+          
+            
+<!--   =======================side 배너 =========================-->
+                <div class="section-1-banner">
+                    <div>
+                       <h4>대한민국 서비스만족 大賞</h4>
+                       <p>공공누리 포털 선정</p>
+                       <p>공공누리 포털이 산업통산자원부와 한국일보에서 주최하는 '대한민국 서비스만족 대상(공공서비스 부문)'을 수상하였습니다.</p>
+                       <input type="button" value="자세히 보기">
+                       <img src="img/main/thum_1450614748738.jpg" alt=".">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section-2 clearfix">
+           <div class="section-2-box">
+               <h3>공지사항</h3>
+                    <ul>
+                        <li><a href="#">[중요공지] 저작물 등록방식 변경 안내 </a></li>
+                        <li><a href="#">[모집공고] 공공저작물 활용 중소기업 지원사업 대상기업.. </a></li>
+                        <li><a href="#">[알림] 공공누리, '국민에게 유용한 정보 10선’ 선.. </a></li>
+                        <li><a href="#">[공지] 공공누리 리뉴얼오픈 기념 퀴즈이벤트 당첨자 발.. </a></li>
+                        <li><a href="#">[공지] 2016 공공누리 리뉴얼 오픈 안내 </a></li>
+                        <li><a href="#">더보기</a></li>
+                    </ul>
+            </div>
+<!--
+            <div>
+                <h3>보도자료</h3>
+                    <ul>
+                        <li><a href="#">[보도자료]당신에게 필요한 저작물을 알려주세요</a></li>
+                        <li><a href="#">[보도자료]공공저작물 자유이용, 무엇이든 물어보세요 </a></li>
+                        <li><a href="#">[보도자료]  공공누리, 제10회 대한민국 서비스 만족 .. </a></li>
+                        <li><a href="#">[보도자료] 저작권 걱정 그만…자유이용 공공저작물 20.. </a></li>
+                        <li><a href="#">[보도자료] 공공저작물 자유이용 허락표시 기준 개정 공..</a></li>
+                        <li><a href="#">더보기</a></li>
+                    </ul>
+            </div>
+-->
+            <div class="section-2-box">
+                <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="#">[FAQ] 공공기관 이용자는 회원 가입 후 승인을 받아야..</a></li>
+                        <li><a href="#">[FAQ] 일반이용자도 회원 가입이 가능한가요? </a></li>
+                        <li><a href="#">[FAQ] 회원 탈퇴는 어떻게 하나요? </a></li>
+                        <li><a href="#">[FAQ] 로그인 ID와 비밀번호가 생각나지 않아요. </a></li>
+                        <li><a href="#">[FAQ] 공공저작물 공공누리 등록은 어떻게 하나요?</a></li>
+                        <li><a href="#">더보기</a></li>
+                    </ul>
+            </div>
+        </section>
+        
+        <section class="section-3 clearfix">
+           <div class="section-3-wrap">
+                <div class="section-3-div">
+                    <a href="#">
+                        <img src="img/icon_lecture.png" alt="공공저작물 강의실 페이지 가기 버튼">
+                        <h3>공공저작물 강의실</h3>
+                        <p>공공저작물의 올바른 관리 및 활용을 위한 강좌</p>
+                    </a>
+                </div>
+                <div class="section-3-div">
+                    <a href="#">
+                        <img src="img/icon_trust.png" alt="신탁관리시스템 페이지 가기 버튼">
+                        <h3>신탁관리시스템</h3>
+                        <p>공공저작권 신탁관리시스템</p>
+                    </a>
+                </div>
+                <div class="section-3-div">
+                    <a href="#">
+                        <img src="img/icon_consulting.png" alt="컨설팅신청 페이지 가기 버튼">
+                        <h3>컨설팅신청</h3>
+                        <p>공공저작물 이용에 대한 컨설팅 지원</p>
+                    </a>
+                </div>
+                <div class="section-3-div">
+                    <a href="#">
+                        <img src="img/icon_register.png" alt="활용사례등록페이지 가기 버튼">
+                        <h3>활용사례등록</h3>
+                        <p>공공저작물 이용사례 활용수기 등록</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-header clearfix">
+           <div class="footer-header-wrap">
+                <ul>
+                    <li><a href="#">공공누리 소개</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">한국문화정보원소개</a></li>
+                </ul>
+                <div class="footer-selectsite">
+                    <select>                      
+                        <option value="#">패밀리사이트</option>
+                        <option value="#">한국문화정보원</option>
+                        <option value="#">공공저작권 신탁관리시스템</option>
+                        <option value="#">문화포털</option>
+                        <option value="#">문화셈터</option>
+                        <option value="#">한민족 정보마당</option>
+                        <option value="#">문화정보서비스 지원센터</option>
+                    </select>        
+                    <select>  
+                        <option value="#">관련사이트</option>                    
+                        <option value="#">문화체육관광부</option>
+                        <option value="#">한국저작권위원회</option>
+                        <option value="#">공공데이터포털</option>
+                        <option value="#">CCKOREA</option>                      
+                    </select>   
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom clearfix">
+           <ul>
+                <li><a href="#"><img src="img/logo_sports.jpg" alt="문화체육관광부 홈페이지 가기 버튼"></a></li>
+                <li><a href="#"><img src="img/logo_kcisa.png" alt="한국문화정보원 홈페이지 가기 버튼"></a></li>
+               <li> <div>우)03925 서울시 마포구 월드컵로 400 
+                   <p>대표전화: 1670-0052 Copyright 한국문화정보원</p></div></li>
+                <li><a href="#"><img src="img/logo_gov.jpg" alt="정부3.0홈페이지 가기 버튼"></a></li>
+                <li><a href="#"><img src="img/logo_clean.jpg" alt="클린사이트 가기 버튼"></a></li>
+           </ul>           
+        </div>
+    </footer>
+    
+    <script>
+        
+        $(document).ready(function(){
+            $("#header-toggle-btn").click(function(){
+                 $("#header-banner").slideToggle();
+        });
+    });
+    </script>
+</body>
+</html>

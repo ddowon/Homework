@@ -1,0 +1,126 @@
+
+/*=========== sub1 main start =================*/
+.main-wrap{
+    width:1050px;
+    margin:50px auto;
+}
+/*=========== section1 start ================*/
+.section-1{
+    float:left;
+    width:200px;
+    letter-spacing: -2px;
+   
+}
+
+.section-1 h3{
+    background-image: url('/img/sub1/bg_lnb.jpg');
+    display: block;
+    width:200px;
+    padding:65px 0;
+    color:white;
+    text-align: center;
+    font-size:30px;
+}
+
+.section-1 ul a{
+    display: block;
+    padding:23px 30px;
+    font-size:16px;
+    font-weight: bold;
+    color:#6C6969;
+    border:1px solid #D2D2D2;
+    border-top: none;    
+}
+.section-1 ul a:hover{
+    background: #F1F1F1;
+    color:#8762A5;
+}
+.section-1 img{
+    display:block;
+    margin:20px auto;
+}
+
+/*=========== section1 end =================*/
+
+/*=========== section2 start =================*/
+.section-2{
+    float:left;
+    margin:40px 0 0 30px;
+    width:800px;
+}
+
+.section-2-top{
+    text-align: right;
+    font-size:14px;
+    font-weight: bold;
+}
+.section-2-title h2{
+    font-size:35px;
+}
+.section-2-title p{
+    padding: 15px 0 25px 0;
+    border-bottom: 2px solid #D2D2D2;
+    font-size:14px;
+    color:#D2D2D2;
+}
+.section-2-searchbox{
+    margin-top:20px;
+    width:800px;
+    height: 100px;
+    border:1px solid #D2D2D2;
+    background-color: #F1F1F1;
+}
+.searchbox-check{
+    
+}
+.section-2-table>p{
+    margin: 30px 0 15px 0;
+    font-size:14px;
+    color:#6C6969;
+}
+.section-2-table span{
+    color:#02B294;
+}
+.section-2-table table tr td{
+    width:200px;
+    text-align: center;
+    border-collapse: collapse;
+    border:1px solid #D2D2D2;
+}
+.section-2-table thead td{
+    padding:5px;
+    background-color:#F1F1F1;
+    font-size:14px;
+}
+.section-2-table tbody img{
+    display: block;
+    margin:auto;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+.section-2-table tbody p{
+    margin:9px 0 20px 0 ;
+    color:#6C6969;
+    font-size:12px;
+}
+/*=========== section2 end =================*/
+
+/*=========== section3 start =================*/
+.section-3{
+    float:left;
+    margin-left: 30px;
+    width:800px;
+}
+
+
+/*=========== section3 end =================*/
+
+/*=========== section4 start =================*/
+.section-4{
+    float:left;
+    margin-left: 30px;
+    width:800px;
+}
+/*=========== section4 end =================*/
+
+/*===========  sub1 main end =================*/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src=http://code.jquery.com/jquery-1.9.1.js></script>
+    <link href="tab.css" rel="stylesheet">
+    
+    <script>
+       jQuery(function($){
+            // List Tab Navigation
+            var tab_list = $('div.tab.list');
+            var tab_list_i = tab_list.find('>ul>li');
+            tab_list.removeClass('jx');
+            tab_list_i.find('>ul').hide();
+            tab_list.find('>ul>li[class=active]').find('>ul').show();
+            tab_list.css('height', tab_list.find('>ul>li.active>ul').height()+40);
+            function listTabMenuToggle(event){
+                var t = $(this);
+                tab_list_i.find('>ul').hide();
+                t.next('ul').show();
+                tab_list_i.removeClass('active');
+                t.parent('li').addClass('active');
+                tab_list.css('height', t.next('ul').height()+40);
+                return false;
+            }
+            tab_list_i.find('>a[href=#]').click(listTabMenuToggle).focus(listTabMenuToggle);
+        });
+    
+    </script>
+    <style>
+    
+    </style>
+</head>
+
+
+<body>
+   <div class="tab list jx">
+	<ul>
+		<li class="active"><a href="#"><span>공지사항</span></a>
+			<ul>
+				<li>
+                    <a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> 
+                    <span class="time">2010.12.24</span>
+				</li>
+				<li>
+                    <a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> 
+                    <span class="time">2010.12.24</span>
+				</li>
+				<li>
+                    <a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> 
+                    <span class="time">2010.12.24</span>
+				</li>
+				
+				<li class="more"> <a href="#">공지사항 더보기</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>보도자료</span></a>
+			<ul>
+				<li>
+				    <a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				<li>
+				    <a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				<li>
+				    <a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				
+				<li class="more"> <a href="#">보도자료 더보기</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>해명자료</span></a>
+			<ul>
+				<li> 
+				    <a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				<li> 
+				    <a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				<li> 
+				    <a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> 
+				    <span class="time">2010.12.24</span>
+				</li>
+				
+				<li class="more"> <a href="#">해명자료 더보기</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+   
+    
+</body>
+</html>
