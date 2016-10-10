@@ -1,0 +1,18 @@
+/* media query*/
+@media (max-width: 1250px){
+	.side-menu {left: -319px;}
+	.tablet {
+		display: block;
+		position: fixed;
+		width: 70px;
+		height: 100vh;
+		border-right: 1px solid #E5E5E5;
+	}
+	.main-wrap {
+		left: 70px;
+		width: 95%;
+		max-width: 1000px;
+		min-width:600px;
+	}
+}
+/*@media (max-width: )*/
