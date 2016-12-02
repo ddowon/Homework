@@ -83,14 +83,6 @@
 
 
 /* main */
-.main-wrap {
-	position: relative;
-	left: 319px;
-	/*width:70%;*/
-	width: calc(90% - 319px);
-	max-width: 1300px;
-	min-width: 900px;
-}
 
 .brand-img {
 	padding-bottom: 50%;

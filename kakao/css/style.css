@@ -175,10 +175,33 @@ img {
 }
 
 /* side-menu toggle-btn */
-	.toggle-menu-btn {
-		margin: 15px;
-		cursor: pointer;
-		background: transparent;
-		border: none;
-	}
+.toggle-menu-btn {
+	margin: 15px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+}
 
+/* main */
+
+main {
+	position: relative;
+	left: 319px;
+	/*width:70%;*/
+	width: calc(90% - 319px);
+	max-width: 1300px;
+	min-width: 900px;
+}
+main > .sub-page {
+	/*margin: 0 auto;*/
+	padding-top: 100px;
+	/*width: 1000px;*/
+	min-height: 100vh;
+	border-right: 1px solid lightgray;
+}
+
+.sub-page > h1 {
+	font-size: 60px;
+	letter-spacing: -7px;
+	padding-left: 100px;
+}

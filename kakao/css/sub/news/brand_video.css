@@ -1,0 +1,40 @@
+
+.brand-video-wrap {
+	/*margin: 0 auto;*/
+	padding: 50px 0;
+	text-align: center;
+}
+
+.brand-video-wrap ~ p,
+.brand-video-wrap ~ h3 {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.brand-video {
+	width: 600px;
+	height: 400px;
+	/*padding-bottom: 56.26%;*/
+}
+
+/* section 2 */
+.other-video-wrap {
+	border-top: 1px solid lightgray;
+}
+.other-video-list {
+	margin: 0 auto;
+	display: inline-block;
+}
+.other-video-list li {
+	float: left;
+	padding: 20px;
+	width: 250px;
+	overflow: hidden;
+}
+.other-video-list img {
+	width: 250px;
+}
+.other-video-list h4 {
+	text-overflow: ellipsis;
+
+}

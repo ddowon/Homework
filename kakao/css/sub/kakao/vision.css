@@ -1,0 +1,42 @@
+
+.vision-h2 {
+	font-size: 40px;
+	letter-spacing: -5px;
+	word-spacing: 10px;
+	line-height: 1.7;
+	text-align: center;
+}
+.vision-h2 strong:nth-child(1){
+	font-size: 60px;
+	letter-spacing: 2px;
+}
+
+.vision-h2 strong > .bg2 {
+	width: 100px;
+	height: 100px;
+	background-image: url(../../../img/txt_corp.png);
+	background-position: 0 0;
+}
+
+.vision-txt {
+	padding: 70px 200px 70px;
+	font-size: 20px;
+	text-align: center;
+}
+.vision-wrap > [class*="bg"] {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-image: url(../../../img/ico_corp_160215.png);
+	background-position: 0 -1485px;
+}
+.vision-wrap .bg1 {
+	top: 30px;
+	left: 200px;
+}
+.vision-wrap .bg3 {
+	bottom: 30px;
+	left: 750px; 
+}
+
