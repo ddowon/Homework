@@ -3,16 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>KaKao page</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/sub/kakao/vision.css">
 	<link rel="stylesheet" href="css/sub/news/brand_video.css">
 	<!-- <link rel="stylesheet" href="css/mediaquery.css"> -->
 	<script src="https://use.fontawesome.com/59f2fc75bc.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
+	<script src="js/angular.min.js"></script>
+<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script> -->
+<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
 	<script src="js/angular/module.js"></script>
+
+
+	<style>
+		.displayOn {
+			display: block;
+		}
+		.displayOff {
+			display: none;
+		}
+
+	</style>
+
+
 </head>
 <body>
 	<div class="side-menu">
@@ -20,16 +36,16 @@
 			<h1><a class="brand-logo" href="#/">kakao</a></h1>
 			<nav>
 				<ul class="gnb-nav">
-					<li><a href="#vision">카카오</a>
+					<li tabindex="0">카카오
 						<ul class="depth_menu">
-							<li><a href="#/">비전</a></li>
+							<li><a href="#vision">비전</a></li>
 							<li><a href="#/">연혁</a></li>
 							<li><a href="#/">서비스소개</a></li>
 							<li><a href="#/">사업현황</a></li>
 							<li><a href="#/">오시는 길</a></li>
 						</ul>
 					</li>
-					<li><a href="#/">투자정보</a>
+					<li tabindex="0">투자정보
 						<ul class="depth_menu">
 							<li><a href="#/">경영정보</a></li>
 							<li><a href="#/">공시정보</a></li>
@@ -41,20 +57,20 @@
 							<li><a href="#/">공고사항</a></li>
 						</ul>
 					</li>
-					<li><a href="#/">인재영입</a>
+					<li tabindex="0">인재영입
 						<ul class="depth_menu">
 							<li><a href="#/">회사생활</a></li>
 							<li><a href="#/">입사지원</a></li>
 							<li><a href="#/">FAQ</a></li>
 						</ul>
 					</li>
-					<li><a href="#video">새소식</a>
+					<li tabindex="0">새소식
 						<ul class="depth_menu">
 							<li><a href="#/">보도자료</a></li>
-							<li><a href="#/">브랜드 영상</a></li>
+							<li><a href="#video">브랜드 영상</a></li>
 						</ul>
 					</li>
-					<li><a href="#/">고객문의</a>
+					<li tabindex="0">고객문의
 						<ul class="depth_menu">
 							<li><a href="#/">광고 및 제휴</a></li>
 							<li><a href="#/">카카오 고객센터</a></li>
