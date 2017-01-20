@@ -57,12 +57,6 @@ img {
 }
 
 /*  side-menu  */
-.displayOn {
-	display: block;
-}
-.displayOff {
-	display: none;
-}
 
 .side-menu {
 	position: fixed;
@@ -214,6 +208,14 @@ img {
 	display: block;
 	padding: 10px;
 }
+
+.displayOn {
+	display: block;
+}
+.displayOff {
+	display: none;
+}
+
 
 /* side-menu toggle-btn */
 .toggle-menu-btn {
