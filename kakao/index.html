@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/sub/kakao/vision.css">
 	<link rel="stylesheet" href="css/sub/news/brand_video.css">
-	<!-- <link rel="stylesheet" href="css/mediaquery.css"> -->
+	<link rel="stylesheet" href="css/mediaquery.css">
 
 	<script src="https://use.fontawesome.com/59f2fc75bc.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
@@ -20,6 +20,9 @@
 
 </head>
 <body>
+	<div class="tablet open-gnb-wrap">
+		<button class="open-menu-btn fa fa-bars fa-3x" type="button" aria-hidden="true"></button>
+	</div>
 	<div class="side-menu">
 		<div class="side-header">
 			<h1><a class="brand-logo" href="#/">kakao</a></h1>
@@ -89,13 +92,13 @@
 				</ul>
 			</div><!-- sitelink -->
 		</div><!-- side-footer -->
+		<button class="tablet close-menu-btn fa fa-times fa-3x" type="button" aria-hidden="true"></button>
 	</div><!-- side-menu -->
-	<div class="tablet">
-		<button class="toggle-menu-btn fa fa-bars fa-3x" type="button" aria-hidden="true"></button>
-	</div>
 
 	<!-- main -->
-	<main ng-view></main>
+	<main>
+		<div ng-view class="main"></div>
+	</main>
 
 
 	<script src="js/js.js"></script>

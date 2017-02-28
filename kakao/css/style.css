@@ -57,7 +57,7 @@ img {
 	min-height: 650px;
 	border-right: 1px solid lightgray;
 	background-color: #fff;
-	z-index: 10;
+	z-index: 1000;
 }
 .side-menu a:hover,
 .side-menu a:focus {
@@ -102,6 +102,32 @@ img {
 .depth_menu {
 	display: none;
 }
+
+.gnb-nav {
+	transition: all 0.3s;
+}
+.gnb-nav:hover {
+	text-align: left;
+	margin-left:-80px;
+}
+.gnb-nav >li:hover >ul,
+.gnb-nav >li:focus >ul {
+	display: block;
+}
+.depth_menu{
+	position: absolute;
+	left: 180px;
+	transform: translateY(-40px);
+}
+
+.depth_menu a {
+	font-size: 13px;
+	width: 100px;
+	/*line-height: 30px;*/
+	height: 30px;
+	text-align: center;
+}
+
 .info-nav {
 	position: absolute;
 	top: 0;
@@ -184,7 +210,7 @@ img {
 
 /* main */
 
-main {
+.main {
 	position: relative;
 	left: 319px;
 	/*width:70%;*/
@@ -192,7 +218,7 @@ main {
 	max-width: 1300px;
 	min-width: 900px;
 }
-main > .sub-page {
+.main > .sub-page {
 	/*margin: 0 auto;*/
 	padding-top: 100px;
 	/*width: 1000px;*/

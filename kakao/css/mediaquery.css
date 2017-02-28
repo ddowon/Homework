@@ -1,18 +1,27 @@
 /* media query*/
 @media (max-width: 1250px){
 	.side-menu {left: -319px;}
-	.tablet {
+	.tablet.open-gnb-wrap {
 		display: block;
 		position: fixed;
 		width: 70px;
 		height: 100vh;
 		border-right: 1px solid #E5E5E5;
 	}
-	.main-wrap {
+	.tablet.close-menu-btn{
+		display: block;
+	}
+	.main {
 		left: 70px;
-		width: 95%;
-		max-width: 1000px;
-		min-width:600px;
+	}
+	.side-menu-on {
+		left: 0px;
+		transition: 1s;
+	}
+
+}
+@media (max-width: 900px){
+	.side-menu {
+	
 	}
 }
-/*@media (max-width: )*/

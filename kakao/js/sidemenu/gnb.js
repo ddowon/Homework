@@ -22,17 +22,20 @@ var gnbNavList = document.querySelectorAll('.gnb-nav > li');
 	// 		$('ul.depth_menu').eq(num).addClass('displayOn').removeClass('displayOff');
 	// 	}
 	// })(i);
+/*
+	$(gnbNav).on("click", function(){
+		$(this).css("left","100px");
+	});*/
 
-
-//효선언니의 코드 리펙토링!! ㅠㅠ
+//코드 리펙토링!! ㅠㅠ
 	$(gnbNavList).on("click focus",function(){
 
-			gnbNav.style.textAlign = "left";
+			$(gnbNavList).addClass('moveLeft');
 
-
+			
 			$(".depth_menu").not($(this).find(".depth_menu")).removeClass('displayOn').addClass('displayOff');
 			$(this).find(".depth_menu").addClass('displayOn').removeClass('displayOff');
-	} ); 
+	}); 
 		
 	// })(i);
 // }

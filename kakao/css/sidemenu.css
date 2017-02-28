@@ -9,6 +9,7 @@ html {
 	font-family: "돋움";
 	font-size: 14px;
 }
+
 a {
 	text-decoration: none;
 	/*color: #3B3B3B;*/
@@ -26,13 +27,13 @@ img {
 	clear: both;
 }
 
-.displayOn {
+/* .displayOn {
 	display: block;
 }
 .displayOff {
 	display: none;
 }
-
+ */
 .readable-hidden {
   overflow: hidden;
   position: absolute;
@@ -116,7 +117,7 @@ img {
 .depth_menu {
 	display: none;
 	position: absolute;
-	left: 200px;
+	left: 220px;
 	transform: translateY(-35px);
 }
 
@@ -132,7 +133,7 @@ img {
 .depth_menu li:focus::after {
 	content: '';
 	display: block;
-	margin-top: -15px;
+	margin-top: -10px;
 	color: #000;
 	border-bottom: 3px solid #FFCE00;
 }
@@ -209,6 +210,7 @@ img {
 	padding: 10px;
 }
 
+/* js - setAttribute class */
 .displayOn {
 	display: block;
 }
@@ -216,18 +218,42 @@ img {
 	display: none;
 }
 
+.moveLeft {
+	text-align: left;
+	left: 40px;
+}
+
 
 /* side-menu toggle-btn */
-.toggle-menu-btn {
+.open-menu-btn, .close-menu-btn {
 	margin: 15px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
+	z-index:10000;
 }
+.close-menu-btn {
+	position: absolute;
+	width: 70px;
+	right: 0;
+	top: 0;
+}
+
+.tablet.close-menu-btn {
+	display: none;
+}
+.active-gnb-main {
+	position: absolute;
+	width: 100%;
+	height: 500vh;
+	z-index: 1;
+	background: rgba(0,0,0,0.6);
+}
+
 
 /* main */
 
-main {
+.main {
 	position: relative;
 	left: 319px;
 	/*width:70%;*/
@@ -235,7 +261,7 @@ main {
 	max-width: 1300px;
 	min-width: 900px;
 }
-main > .sub-page {
+.main > .sub-page {
 	/*margin: 0 auto;*/
 	padding-top: 100px;
 	/*width: 1000px;*/
