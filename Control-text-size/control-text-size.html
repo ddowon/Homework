@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="../../Resource/fontawesome/font-awesome.min.css"> -->
+</head>
+<body>
+	<div class="wrap">
+		<div class="position-center">
+			<div class="control-box">
+					<select class="font-weight-change" name="weight" id="weight">
+						<option>Thin</option>
+						<option selected>Regular</option>
+						<option>Bold</option>
+					</select>
+
+				<div class="font-size-change">
+					<input class="font-size" type="text" value="16px">
+					<div>
+						<button class="decrease-btn" type="button" aria-label="글자 크기 줄이기" ></button>
+					</div>
+					<div>
+						<button class="increase-btn" type="button" aria-label="글자 크기 키우기"></button>
+					</div>
+				</div>
+				<div class="bg-change">
+					<button class="white-btn" type="button" aria-label="화면 밝게 하기">A</button>
+					<button class="gray-btn" type="button" aria-label="화면 어둡게 하기">	A</button>
+				</div>
+			</div>
+			<div>
+				<textarea class="preview-text" name="" id="" cols="30" rows="10" placeholder="글자크기, 굵기, 그리고 배경색을 자유롭게 컨트롤해보세요"></textarea>
+			</div>
+		</div>
+	</div>
+	<script src="../../Resource/DOMHelper/index.js"></script>
+	<script src="../../Resource/DOMHelper/domhelper_t.js"></script>
+	<script src="js/control-text-size.js"></script>
+</body>
+</html>
