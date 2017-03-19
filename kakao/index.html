@@ -20,12 +20,15 @@
 
 </head>
 <body>
+<!-- 	<div class="skip">
+		<a href="#goMain">본문바로가기</a>
+	</div> -->
 	<div class="tablet open-gnb-wrap">
 		<button class="open-menu-btn fa fa-bars fa-3x" type="button" aria-hidden="true"></button>
 	</div>
 	<div class="side-menu">
 		<div class="side-header">
-			<h1><a class="brand-logo" href="#/">kakao</a></h1>
+			<h1><a class="brand-logo" href="#/" lang="en">kakao</a></h1>
 			<nav>
 				<ul class="gnb-nav">
 					<li tabindex="0">카카오
@@ -74,21 +77,21 @@
 			</nav>
 		</div><!-- side-header -->
 		<div class="info-nav">
-			<a href="#">SITEMAP</a>
-			<a href="#">ENGLISH</a>
+			<a href="#" lang="en">SITEMAP</a>
+			<a href="#" lang="en">ENGLISH</a>
 		</div>
 		<div class="side-footer">
 			<ul class="footer-info clearfix">
 				<li><a href="#">개인정보 처리방침</a></li>
 				<li><a href="#">사이버 윤리실</a></li>
 			</ul>
-			<p>Copyright &copy; Kakao Corp.</p>
+			<p lang="en">Copyright &copy; Kakao Corp.</p>
 			<div class="sitelink">
-				<button class="sitelink-btn" type="button">관련사이트<span>열기</span><img src="img/open_icon.svg" alt></button>
+				<button class="sitelink-btn" type="button">관련사이트<span>열기</span><img src="img/open_icon.svg" alt=""></button>
 				<ul class="sitelink-dropdown">
-					<li><a href="#">다음 포털사이트</a></li>
-					<li><a href="#">카카오 서비스</a></li>
-					<li><a href="#">카카오 공식블로그</a></li>
+					<li><a href="#" alt="다음 포털 사이트로 이동">다음 포털사이트</a></li>
+					<li><a href="#" alt="카카오서비스 페이지로 이동">카카오 서비스</a></li>
+					<li><a href="#" alt="카카오 공식 블로그로 이동">카카오 공식블로그</a></li>
 				</ul>
 			</div><!-- sitelink -->
 		</div><!-- side-footer -->
@@ -96,8 +99,8 @@
 	</div><!-- side-menu -->
 
 	<!-- main -->
-	<main>
-		<div data-ng-view class="main"></div>
+	<main >
+		<div data-ng-view class="main" id="goMain" tabindex="0"></div>
 	</main>
 
 
@@ -107,5 +110,6 @@
 	<script src="js/sidemenu/gnb.js"></script>
 	<script src="js/sidemenu/sitelink.btn.js"></script>
 	<script src="js/main/carousel.js"></script>
+	<script src="js/skip.js"></script>
 </body>
 </html>
