@@ -247,6 +247,24 @@ body{
 
 .text-content{
 	background-color: #7f6162;
+	color: #eee;
+	font-size: 24px;
+	text-align: center;
+}
+
+.text-content span {
+	display: inline-block;
+	width: 65%;
+	margin: 0 auto;
+}
+.text-content button{
+	display: inline-block;
+	padding: 5px 2px;
+	margin: 15px;
+	color: #eee;
+	font-size: 20px;
+	background: transparent;
+	border: 3px solid #eee;
 }
 /* footer */
 
@@ -291,6 +309,11 @@ footer h2{
 	.unit-m-2{width:100%;}
 }*/
 
+@media (min-width: 600px){
+	.wrap {
+		min-width: 1150px;
+	}
+}
 @media (max-width:600px){
 	.wrap {
 		width:100%;}
