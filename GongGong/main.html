@@ -6,8 +6,7 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     
-    <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.5.js"></script> 
+    <script type="text/javascript" src="../resource/jquery-3.1.0.min.js"></script> 
 </head>
 <body>
  <!-- onload="showSlides(1) -->
@@ -153,7 +152,7 @@
         </nav>
         
     </header>
-    <main class="main-class">
+    <div class="main-class">
        
         <section  class="section-1">
             <div class="section-1-wrap">
@@ -231,39 +230,41 @@
         
 
         <section class="section-2 clearfix">
-           <div class="section-2-box">
-               <h3>공지사항</h3>
-                    <ul>
-                        <li><a href="#">[중요공지] 저작물 등록방식 변경 안내 </a></li>
-                        <li><a href="#">[모집공고] 공공저작물 활용 중소기업 지원사업 대상기업.. </a></li>
-                        <li><a href="#">[알림] 공공누리, '국민에게 유용한 정보 10선’ 선.. </a></li>
-                        <li><a href="#">[공지] 공공누리 리뉴얼오픈 기념 퀴즈이벤트 당첨자 발.. </a></li>
-                        <li><a href="#">[공지] 2016 공공누리 리뉴얼 오픈 안내 </a></li>
-                        <li><a href="#">더보기</a></li>
-                    </ul>
-            </div>
-<!--
-            <div>
-                <h3>보도자료</h3>
-                    <ul>
-                        <li><a href="#">[보도자료]당신에게 필요한 저작물을 알려주세요</a></li>
-                        <li><a href="#">[보도자료]공공저작물 자유이용, 무엇이든 물어보세요 </a></li>
-                        <li><a href="#">[보도자료]  공공누리, 제10회 대한민국 서비스 만족 .. </a></li>
-                        <li><a href="#">[보도자료] 저작권 걱정 그만…자유이용 공공저작물 20.. </a></li>
-                        <li><a href="#">[보도자료] 공공저작물 자유이용 허락표시 기준 개정 공..</a></li>
-                        <li><a href="#">더보기</a></li>
-                    </ul>
-            </div>
--->
-            <div class="section-2-box">
-                <h3>FAQ</h3>
-                    <ul>
-                        <li><a href="#">[FAQ] 공공기관 이용자는 회원 가입 후 승인을 받아야..</a></li>
+          <div class="notice tab">
+               <div class="section-2-box tab_01 on">
+                  <h3 class="title">공지사항</h3>
+                       <ul class="content">
+                           <li><a href="#">[중요공지] 저작물 등록방식 변경 안내 </a></li>
+                           <li><a href="#">[모집공고] 공공저작물 활용 중소기업 지원사업 대상기업 </a></li>
+                           <li><a href="#">[알림] 공공누리, '국민에게 유용한 정보 10선’ 선정 </a></li>
+                           <li><a href="#">[공지] 공공누리 리뉴얼오픈 기념 퀴즈이벤트 당첨자 발표 </a></li>
+                           <li><a href="#">[공지] 2016 공공누리 리뉴얼 오픈 안내 </a></li>
+                           <li class="more"><a href="#">더보기</a></li>
+                       </ul>
+               </div>
+              
+               <div class="section-2-box tab_02">
+                   <h3 class="title">보도자료</h3>
+                   <ul class="content">
+                       <li><a href="#">[보도자료]당신에게 필요한 저작물을 알려주세요</a></li>
+                       <li><a href="#">[보도자료]공공저작물 자유이용, 무엇이든 물어보세요 </a></li>
+                       <li><a href="#">[보도자료]  공공누리, 제10회 대한민국 서비스 만족 </a></li>
+                       <li><a href="#">[보도자료] 저작권 걱정 그만…자유이용 공공저작물</a></li>
+                       <li><a href="#">[보도자료] 공공저작물 자유이용 허락표시 기준 개정 공개</a></li>
+                       <li class="more"><a href="#">더보기</a></li>
+                   </ul>
+               </div>
+          </div>
+
+            <div class="notice">
+                <h3 class="title">FAQ</h3>
+                    <ul class="content">
+                        <li><a href="#">[FAQ] 공공기관 이용자는 회원 가입 후 승인을 받아야 하나요?</a></li>
                         <li><a href="#">[FAQ] 일반이용자도 회원 가입이 가능한가요? </a></li>
                         <li><a href="#">[FAQ] 회원 탈퇴는 어떻게 하나요? </a></li>
                         <li><a href="#">[FAQ] 로그인 ID와 비밀번호가 생각나지 않아요. </a></li>
                         <li><a href="#">[FAQ] 공공저작물 공공누리 등록은 어떻게 하나요?</a></li>
-                        <li><a href="#">더보기</a></li>
+                        <li class="more"><a href="#">더보기</a></li>
                     </ul>
             </div>
         </section>
@@ -300,7 +301,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
     <footer>
         <div class="footer-header clearfix">
            <div class="footer-header-wrap">
@@ -347,9 +348,13 @@
         
         $(document).ready(function(){
             $("#header-toggle-btn").click(function(){
-                 $("#header-banner").slideToggle();
+                var $value = $(this).val();
+                console.log($value);
+                $value === "닫기" ?  $(this).val("열기"): $(this).val("닫기");
+                $("#header-banner").slideToggle();
         });
     });
     </script>
+    <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>

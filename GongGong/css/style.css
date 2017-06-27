@@ -6,7 +6,7 @@
 /*==============section1 start===================*/
 
 .section-1{
-    background-image:url(/img/bg_music.jpg);
+    background-image:url(../img/bg_music.jpg);
     background-color:gray;
     width: 100%;
     height: 380px;    
@@ -38,7 +38,7 @@
 }
 
 .section-1-banner{
-    background: url('/img/slide_bg.png');
+    background: url('../img/slide_bg.png');
     width:236px;
     height: 570px;
     display: block;
@@ -82,17 +82,85 @@
     width:1250px;
     margin: 0 auto;
 }
-.section-2-box{
-    float:left;
+.section-2 .notice {
+    display: inline-block;
+    position: relative;
+    top:0;
+    left:0;
+    float: left;
+    width: 350px;
+    height: 200px;
     margin: 20px 10px 30px 80px;
     line-height: 25px;
     letter-spacing: -2px;
     font-size:15px;
 }
-.section-2-box h3{
-    margin:10px 0;
+.section-2-box .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.section-2-box .content{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    display: none;
+    width: 350px;
+}
+
+.section-2-box .content li, .notice .content li {
+    width: 320px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+.section-2-box.tab_02 {
+    /*left: -353px;*/
+    /*width: 350px;*/
+}
+.section-2-box .title {
+    display: inline-block;
+    color: lightgray;   
+    cursor: pointer;
+    z-index: 10;
+}
+.section-2-box.on {
+    /*z-index: -1;*/
+}
+.section-2-box .title:hover,
+.section-2-box.on .title {
+    color: black;   
+}
+.section-2-box .title , .notice .title{
+    padding: 10px 0;
     font-size:20px;
-    font-weight: bold;    
+    font-weight: bold;
+}
+.section-2-box.tab_02 .title { 
+    position: relative;
+    top: 0;
+    left: 90px;
+    /*width: 100px;*/
+}
+
+.section-2-box[class*="tab_"].on .content {
+    display: block;
+}
+.section-2-box .more a, .notice .more a{
+    position: absolute;
+    top: 0;
+    right:24px;
+    padding: 18px 0;
+    width: 40px;
+    height: 10px;
+    text-indent: -9999px;
+    background: url(../img/icon_more.png) center center no-repeat;
+}       
+
+.section-2-box .more  a{
+    top: -42px;
 }
 /*==============section2 end===================*/
 

@@ -50,6 +50,7 @@ html, body, div, span, applet, object, iframe,
 /*============= all style start====================*/
 
 body {
+    min-width: 1280px;
     font-family:'Malgun Gothic';
     letter-spacing: -2px;
 }
@@ -136,14 +137,17 @@ a{
 }
 .searchBox{
    float:left;
+   padding-left: 10px;
     width:500px;
-    height: 35px;
+    height: 45px;
     border:2px solid black;
+    box-sizing: border-box;
 }
 
 .header-search input[type=submit]{
    float:left;
     padding:5px 30px;
+    height: 45px;
     border:2px solid black;
     background:black;
     color:white;

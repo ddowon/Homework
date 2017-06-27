@@ -2,35 +2,35 @@
 
 /*====== header-banner-imgSlide ======*/
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//     showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//     showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("imgSlide");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length} ;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-}
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("imgSlide");
+//     if (n > slides.length) {slideIndex = 1}    
+//     if (n < 1) {slideIndex = slides.length} ;
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";  
+//     }
+//     slides[slideIndex-1].style.display = "block";  
+//     dots[slideIndex-1].className += " active";
+// }
 
 
-setInterval(showSlides,2000);
+// setInterval(showSlides,2000);
 
-function imgStop(){
-    clearInterval(showSlides);
-}
+// function imgStop(){
+//     clearInterval(showSlides);
+// }
 
 /*====== header-banner-imgSlide ======*/
 
@@ -60,3 +60,14 @@ function imgStop(){
 //    document.body.style.backgroundColor="white";   //원래대로 흰색으로
 //}
 /*============ 미디어쿼리 end ==============*/
+
+
+
+
+
+var $tab = $(".section-2-box");
+
+$tab.find(".title").on("click", function(){
+    var index = $(this).index();
+    $(this).parent().addClass("on").siblings().removeClass("on");
+})
