@@ -14,20 +14,21 @@
 .brand-video {
 	width: 600px;
 	height: 400px;
-	/*padding-bottom: 56.26%;*/
 }
 
 /* section 2 */
 .other-video-wrap {
 	border-top: 1px solid lightgray;
+	text-align: center;
 }
 .other-video-list {
-	margin: 0 auto;
+	width: 770px;
+	margin-top: 30px;
 	display: inline-block;
 }
 .other-video-list li {
 	float: left;
-	padding: 20px;
+	padding: 20px 10px;
 	width: 250px;
 	overflow: hidden;
 }

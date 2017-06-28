@@ -28,7 +28,7 @@
 	padding: 50px 30px 20px;
 }
 
-.news-box h2, .stock-box, .notice-box {
+.news-box h2, .stock-box {
 	margin-right: 60px;
 	margin-left: 30px;
 }
@@ -162,6 +162,12 @@ p.change-gap {
 	z-index: 100;
 }
 
+.carousel-content {
+	width: 100%;
+	overflow: hidden;
+	height: 440px;
+}
+
 .carousel-content-desc p {
 	margin: 0;
 	color: black;
@@ -178,31 +184,37 @@ p.change-gap {
 }
 .people-box [class*="btn"] {
 	position: absolute;
-	background: black;
+	top: 100px;
+	width: 19px;
+	height: 34px;
+	cursor: pointer;
+	border:none;
+	background: url('../img/ico_corp.png') no-repeat;
 }
 .people-box .btn-prev {
-	top: 30%;
+	left: 7px;
 	/*transform: translateY(-50%);*/
+	background-position: 0 -1650px;
 }
 .people-box .btn-next {
-	top: 30%;
-	right: 0;
+	right: 7px;
+	background-position: 0 -1600px;
 	/*transform: translateY(-50%);*/
 }
-.carousel-pasing-nums {
+/* .carousel-pasing-nums {
 	position: absolute;
 	top: 60%;
 	left: 50%;
 	transform: translateX(-50%);
-}
-.carousel-pasing-nums li {
+} */
+/* .carousel-pasing-nums li {
 	float: left;
 }
 .carousel-pasing-nums button {
 	width: 15px;
 	background: #fff;
 	margin: 0 5px ;
-}
+} */
 /* career-box */
 
 /* kakaostory-box */
@@ -225,9 +237,14 @@ p.change-gap {
 
 /* notice-box */
 
+.notice-box {
+	margin-left: 30px;
+	margin-right: 30px;
+}
 .notice-content {
-	margin: 20px 15px;
-	list-style: disc;
+	margin: 20px 0px 15px 0px;
+	list-style: none;
+
 }
 .notice-content li {
 	padding: 5px 0;
@@ -236,7 +253,67 @@ p.change-gap {
 	border: none;
 	background: transparent;
 	vertical-align: top;
+	cursor: pointer;
 }
 .notice-content li span {
 	float: right;
+	margin-top: 1px;
+	font-size: 13px;
+}
+
+
+.layer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.5);
+}
+.layer.notice.on {
+	display: block;
+}
+.layer .layer-content {
+	position: absolute;
+	top: 63%;
+	left: 50%;
+	width: 500px;
+	height: 400px;
+	padding: 40px;
+	transform: translateX(-50%);
+	background-color: white;
+}
+
+.layer .layer-content h2 {
+	padding-bottom: 15px;
+	border-bottom: 3px solid black;
+	letter-spacing: -2px;
+} 
+
+.layer .layer-content h3 {
+	padding-top: 40px;
+	letter-spacing: -2px;
+}
+
+.layer .layer-content .desc {
+	padding-top : 40px;
+	letter-spacing: -1px;
+	line-height: 25px;
+	font-size: 13px;
+	color: #666;
+}
+.layer .btn-close {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 26px;
+	height: 26px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: url('../img/ico_corp.png') no-repeat;
+	background-position: 0 -1336px;
 }
