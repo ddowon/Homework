@@ -193,28 +193,13 @@ p.change-gap {
 }
 .people-box .btn-prev {
 	left: 7px;
-	/*transform: translateY(-50%);*/
 	background-position: 0 -1650px;
 }
 .people-box .btn-next {
 	right: 7px;
 	background-position: 0 -1600px;
-	/*transform: translateY(-50%);*/
 }
-/* .carousel-pasing-nums {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translateX(-50%);
-} */
-/* .carousel-pasing-nums li {
-	float: left;
-}
-.carousel-pasing-nums button {
-	width: 15px;
-	background: #fff;
-	margin: 0 5px ;
-} */
+
 /* career-box */
 
 /* kakaostory-box */

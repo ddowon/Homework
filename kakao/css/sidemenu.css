@@ -88,7 +88,6 @@ img {
 }
 .brand-logo {
 	display: block;
-	/*margin: 0 auto;*/
 	height: 40px;
 	background-image: url('../img/img_logo.png');
 	background-repeat: no-repeat;
@@ -96,7 +95,6 @@ img {
 	text-indent: -99999px;
 }
 .side-header {
-	/*margin-top: 70%;*/
 	position: relative;
 	top: 25%;
 	text-align: center;
@@ -107,7 +105,6 @@ img {
 .gnb-nav li,
 .gnb-nav a {
 	display: block;
-	/*position: relative;*/
 	margin: 0 auto;
 	width: 120px;
 	height: 40px;
@@ -157,10 +154,6 @@ img {
 	margin-top: 30px;
 	text-align: center;
 }
-/*.info-nav a {
-	margin: 0 10px;	
-	padding: 10px 0;
-}*/
 .info-nav li:hover::after,
 .info-nav li:focus::after {
 	content: '';
@@ -274,9 +267,7 @@ img {
 	min-width: 900px;
 }
 .main > .sub-page {
-	/*margin: 0 auto;*/
 	padding-top: 100px;
-	/*width: 1000px;*/
 	min-height: 100vh;
 	border-right: 1px solid lightgray;
 }
