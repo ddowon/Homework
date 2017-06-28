@@ -64,6 +64,13 @@ a{
     display:block;
     clear:both;
 }
+.readable-hidden{
+    width:1px;
+    height: 1px;
+    margin:-1px;
+    overflow:hidden;
+    display: block;
+}
 
 /*============= all style end ==================*/
 
@@ -195,6 +202,22 @@ a{
 }
 .header-nav:hover .nav-dropdown-content{
     display: block;
+}
+
+
+
+
+/* 현재 작업 한 페이지 표시  */
+
+.header-nav .header-nav-main {
+    color: gray;
+}
+.header-nav .header-nav-main.exist-page{
+    color: black;
+}
+
+.nav-dropdown-content a.exist-page{
+    color:palevioletred;
 }
 
 /*===================================*/

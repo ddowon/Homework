@@ -1,0 +1,136 @@
+nav {
+    box-shadow: 0px 14px 27px -20px;
+}
+/*=========== sub1 main start =================*/
+.main-wrap{
+    width:1050px;
+    margin:50px auto;
+}
+/*=========== section1 start ================*/
+.section-1{
+    float:left;
+    width:200px;
+    letter-spacing: -2px;
+   
+}
+
+.section-1 h3{
+    background-image: url('../img/sub1/bg_lnb.jpg');
+    display: block;
+    width:200px;
+    padding:40px 0;
+    line-height: 45px;
+    color:white;
+    text-align: center;
+    font-size:30px;
+}
+
+.section-1 ul a{
+    display: block;
+    padding:23px 30px;
+    font-size:16px;
+    font-weight: bold;
+    color:#6C6969;
+    border:1px solid #D2D2D2;
+    border-top: none;    
+}
+.section-1 ul a:hover{
+    background: #F1F1F1;
+    color:#8762A5;
+}
+.section-1 img{
+    display:block;
+    margin:20px auto;
+}
+
+/*=========== section1 end =================*/
+/*=========== section2 start =================*/
+
+.section-2{
+    float:left;
+    margin:40px 0 0 30px;
+    width:800px;
+}
+
+.section-2-top{
+    text-align: right;
+    font-size:14px;
+    font-weight: bold;
+}
+.section-2-title h2{
+    font-size:35px;
+}
+.section-2-title p{
+    padding: 15px 0 25px 0;
+    border-bottom: 2px solid #D2D2D2;
+    font-size:14px;
+    color:#D2D2D2;
+}
+
+.tab .tab-title{
+    width: 800px;
+    margin-top:50px;
+    padding-bottom :2px;
+    border-bottom: 2px solid #876299;
+}
+
+.tab .tab-title li {
+    float: left;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: gray;
+    border: 1px solid #d2d2d2;
+    border-right: none;
+    background: #f1f1f1;
+
+}
+.tab .tab-title li:last-child{
+    border-right: 1px solid #d2d2d2;
+
+}
+.tab .tab-title li:hover,
+.tab .tab-title li.on {
+    color: white;
+    background: #876299;
+}
+
+
+.tab-content .faq-list {
+    margin-top: 40px;
+    margin-left: 0px;
+    border-top: 1px solid black;
+}
+
+.tab-content .faq-list .question {
+    padding: 20px 70px;
+    border-bottom: 1px solid #d2d2d2;
+    cursor: pointer;
+}
+.tab-content .faq-list .answer {
+    display: none;
+    padding:40px 100px;
+    line-height: 30px;
+    background: #f1f1f1;
+    color: #555;
+    font-size: 14px;
+}
+.tab-content .faq-list .answer.on {
+    display: block;
+}
+/*=========== section2 end =================*/
+/*==================quick start================ */
+.quick-menu{
+    position:absolute;
+    top:20px;
+    right: 25px;
+}
+.quick-menu li{
+    margin-top:20px;
+}
+
+/*==================quick end================ */

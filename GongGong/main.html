@@ -89,7 +89,7 @@
         <div class="header-search">
             <div class="header-search-logo">
                <span class="nav-menu-icon" onclick="sidenavOpen()">&#9776;</span>
-                <a href="#"> 
+                <a href="main.html"> 
                     <img src="img/logo.png" alt="공공누리로고">
                 </a>
             </div>
@@ -103,9 +103,9 @@
         <nav class="clearfix">
             <ul class="header-nav">
                 <li>
-                    <a href="#" class="header-nav-main">공공저작물</a>
+                    <a href="#" class="header-nav-main exist-page">공공저작물</a>
                     <ul class="nav-dropdown-content">
-                        <li><a href="#">저작물 통합검색</a></li>  
+                        <li><a href="sub1.html" class="exist-page">저작물 통합검색</a></li>  
                         <li><a href="#">음악 저작물</a></li>
                         <li><a href="#">사진 저작물</a></li>
                         <li><a href="#">어물 저작물</a></li>
@@ -132,9 +132,9 @@
                     </ul>
                 </li>    
                 <li>
-                    <a href="#" class="header-nav-main">공공저작물 상담</a>
+                    <a href="#" class="header-nav-main exist-page">공공저작물 상담</a>
                     <ul class="nav-dropdown-content">
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="faq.html" class="exist-page">FAQ</a></li>
                         <li><a href="#">공공기관 Q&amp;A</a></li>
                         <li><a href="#">일반이용자 Q&amp;A</a></li>
                     </ul>
@@ -352,8 +352,8 @@
                 console.log($value);
                 $value === "닫기" ?  $(this).val("열기"): $(this).val("닫기");
                 $("#header-banner").slideToggle();
+            });
         });
-    });
     </script>
     <script type="text/javascript" src="js/js.js"></script>
 </body>
